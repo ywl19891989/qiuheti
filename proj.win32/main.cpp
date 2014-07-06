@@ -16,6 +16,7 @@ int APIENTRY _tWinMain(HINSTANCE hInstance,
     AppDelegate app;
     CCEGLView* eglView = CCEGLView::sharedOpenGLView();
     eglView->setViewName("qiuheti");
-    eglView->setFrameSize(480, 320);
+	float scale = 0.8f;
+    eglView->setFrameSize(480 * scale, 800 * scale);
     return CCApplication::sharedApplication()->run();
 }
